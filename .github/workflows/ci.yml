@@ -15,5 +15,5 @@ jobs:
         env:
           BROWSERSTAK_USERNAME: ${{ secrets.BROWSERSTAK_USERNAME }}
           BORWSERSTACK_KEY: ${{ secrets.BORWSERSTACK_KEY }} 
-        run: npx wdio config/wdio.android.bs.conf.js --spec test/specs/android/delete-android-colorNote-screen.spec.js
+        run: npx wdio config/wdio.android.bs.conf.js --spec .test/specs/android/delete-android-colorNote-screen.spec.js
       - uses: actions/upload-artifact@v1
