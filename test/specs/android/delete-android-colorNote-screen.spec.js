@@ -4,7 +4,7 @@ describe('Delete note and check note in the trash can', () => {
 
     before(async () => {
         await EditNoteScreen.skipTutorial();
-        await EditNoteScreen.addAndSaveNote("TV Shows","Snowpiercer\nStranger Things\nDeamon Slayer");
+        await EditNoteScreen.addAndSaveNote("Fav Animes Shows","Snowpiercer\nStranger Things\nDeamon Slayer");
         await driver.back();
     });
 
