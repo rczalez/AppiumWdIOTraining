@@ -1,10 +1,11 @@
-import  EditNoteScreen  from "../../screenObjects/android/edit-note.screen";
+const EditNoteScreen = require("../screenObjects/android/edit-note.screen");
+//import  EditNoteScreen  from "../../screenObjects/android/edit-note.screen";
 
 describe('Delete note and check note in the trash can', () => {
 
     before(async () => {
         await EditNoteScreen.skipTutorial();
-        await EditNoteScreen.addAndSaveNote("Fav Animes Shows","Snowpiercer\nStranger Things\nDeamon Slayer");
+        await EditNoteScreen.addAndSaveNote("TV Shows","Snowpiercer\nStranger Things\nDeamon Slayer");
         await driver.back();
     });
 
