@@ -1,4 +1,3 @@
-//const EditNoteScreen = require("../screenObjects/android/edit-note.screen");
 import  EditNoteScreen  from "../../screenObjects/android/edit-note.screen";
 
 describe('Delete note and check note in the trash can', () => {
