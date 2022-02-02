@@ -1,0 +1,22 @@
+name: learn-github-actions
+on: [push, pull_request]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.3.0'
+      - run: npm install
+      - name: Test
+      - env:
+          BROWSERSTAK_USERNAME: ${{ secrets.BROWSERSTAK_USERNAME }}
+          BORWSERSTACK_KEY: ${{ secrets.BORWSERSTACK_KEY }} 
+      - run: npx wdio config/wdio.android.bs.conf.js --spec test/specs/android/delete-android-colorNote-screen.spec.js
+      - uses: actions/upload-artifac@v1
+        if: failure()
+        with:
+          name: logs
+          path: logs
