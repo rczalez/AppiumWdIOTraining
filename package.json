@@ -1,0 +1,31 @@
+{
+  "name": "webdriverio-appium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.16.13",
+    "appium-uiautomator2-driver": "^1.75.0",
+    "dotenv": "^14.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.16.9",
+    "@wdio/appium-service": "^7.16.13",
+    "@wdio/browserstack-service": "^7.16.13",
+    "@wdio/local-runner": "^7.16.13",
+    "@wdio/mocha-framework": "^7.16.13",
+    "@wdio/spec-reporter": "^7.16.13",
+    "appium": "^1.22.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-wdio": "^7.4.2"
+  }
+}
