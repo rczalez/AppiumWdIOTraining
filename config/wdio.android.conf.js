@@ -18,7 +18,7 @@ const { config } = require('./wdio.shared.conf');
     //
 
 config.specs = [
-    './test/specs/android/add-android-colorNote-screen*.js'
+    './test/specs/android/newTest-colorNote-screen*.js'
 ];
 
     //

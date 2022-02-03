@@ -17,7 +17,7 @@ config.key = process.env.BORWSERSTACK_KEY;
     //
 
 config.specs = [
-    './test/specs/android/add-android-colorNote-screen*.js'
+    './test/specs/android/changeTheme-colorNote-screen*.js'
 ];
 
     //
