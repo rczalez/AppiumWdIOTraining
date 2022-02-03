@@ -1,5 +1,5 @@
 //const AddNoteScreen = require("../../screenObjects/android/add-note.screen");
-import { AddNoteScreen } from "../../screenObjects/android/add-note.screen";
+import  AddNoteScreen  from "../../screenObjects/android/add-note.screen";
 
 
 

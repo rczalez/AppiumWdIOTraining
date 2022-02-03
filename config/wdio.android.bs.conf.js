@@ -17,7 +17,7 @@ config.key = process.env.BORWSERSTACK_KEY;
     //
 
 config.specs = [
-    './test/specs/android/delete-android-colorNote-screen*.js'
+    './test/specs/android/add-android-colorNote-screen*.js'
 ];
 
     //

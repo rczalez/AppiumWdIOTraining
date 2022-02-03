@@ -18,7 +18,7 @@ const { config } = require('./wdio.shared.conf');
     //
 
 config.specs = [
-    './test/specs/android/add-logText*.js'
+    './test/specs/android/add-android-colorNote-screen*.js'
 ];
 
     //
@@ -32,7 +32,7 @@ config.capabilities = [
         platformName: "Android",
         "appium:platformVersion": "11.0",
         "appium:deviceName": "Pixel 5 API 30 WdIO",
-        "appium:app": path.join(process.cwd(), "app/android/ApiDemos-debug.apk"),
+        "appium:app": path.join(process.cwd(), "app/android/colornote-notepad.apk"),
         "appium:automationName": "UiAutomator2",
         //autogrant app permissions
         "appium:autoGrantPermissions": true

@@ -54,4 +54,4 @@ async saveNote()
 }
 
 module.exports = new addNoteScreen();
-//when using jsx: export default  new addNoteScreen();
+//export default  new addNoteScreen();
